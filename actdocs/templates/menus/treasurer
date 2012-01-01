@@ -1,0 +1,17 @@
+<!-- money menu -->
+[% IF global.request.user.is_treasurer %]
+   [% WRAPPER menus/section %]
+   {{Treasurer}}
+   [% END %]
+   [% WRAPPER menus/item %]
+   <a href="[% make_uri('payments') %]">{{Payments}}</a>
+   [% END %]
+   [% WRAPPER menus/item %]
+   <a href="[% make_uri('csv/payments')
+   %]">{{Payments}} (CSV)</a>
+   [% END %]
+   [% WRAPPER menus/item %]
+   <a href="[% make_uri('csv/payment_items')
+   %]">{{Payment Details}} (CSV)</a>
+   [% END %]
+[% END %]

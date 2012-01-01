@@ -1,0 +1,155 @@
+// sass!
+
+// Reset all base styles
+@import url(/dcbpw2012/css/reset.css);
+
+// Fancy font that we'll use all over
+@import url(/dcbpw2012/MuseoSans500/MuseoSans500.css);
+
+// All our major variables
+$page-bg:        #F5F5F5;
+$body-bg:        #FFFFFF;
+$body-width-min: 600px;
+$body-width-max: 1024px;
+$sidebar-width:  300px;
+
+body {
+	background-color: $page-bg;
+	color: black;
+  font-family: 'MuseoSans-500', sans-serif;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+// Wrap the entire page
+#wrapperwrapper {
+  min-width: $body-width-min;
+  max-width: $body-width-max;
+	margin: 30px auto;
+}
+
+#wrapper {
+  margin: 0px 15px;
+}
+
+// Search thingie at the top
+#searchbar {
+  overflow: auto;
+  width: 100%;
+  padding-bottom: 10px;
+  div {
+    float: right;
+    #searchinput {
+      width: 360px;
+      border: 1px solid #CCC;
+    }
+  }
+  img {
+    vertical-align: middle;
+  }
+  form {
+    display: inline;
+  }
+}
+
+#fakepage {
+  background-color: $body-bg;
+  border: solid 1px #CCC;
+  -moz-box-shadow: 0px 0px 5px #999;
+  -webkit-box-shadow: 0px 0px 5px #999;
+  box-shadow: 0px 0px 5px #888;
+  //  overflow: auto;
+  width: 100%;
+}
+
+#headerbar, #footerbar {
+  overflow: auto;
+  width: 100%;
+  height: 8px;
+  background-color: #333;
+  clear: both
+}
+
+#headerbar {
+  margin-bottom: 20px;
+}
+
+#conference_name_table {
+  margin-top: 20px;
+  height: 218px;
+  width: 100%;
+  img {
+    vertical-align: middle;
+  }
+  #logocol {
+    width: $sidebar-width;
+    text-align: center;
+  }
+}
+
+#menu {
+	float: left;
+	font-size: 90%;
+	width: 250px;
+  //  border: 1px dashed black;
+  h2 {
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    left: -12px;
+    background-image: url('/dcbpw2012/sidebar-banner.gif');
+    background-repeat: no-repeat;
+    color: #fff;
+    z-index: 5;
+    height: 40px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 30px;
+    vertical-align: middle;
+    a, a:hover, a:visited, a:link {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  li {
+    margin-left: 1em;
+    list-style-type: none;
+  }
+  li+h2 {
+    margin-top: 10px;
+  }
+}
+
+#content {
+  padding-right: 40px;
+  padding-left: 20px;
+  //  float: right;
+  //  width: 650px;
+}
+
+#footer {
+	clear: both;
+	font-size: 80%;
+	text-align: right;
+  overflow: auto;
+  width: 100%;
+  .leftside {
+    float: left;
+  }
+}
+
+a {
+  text-decoration: none;
+  &:link {
+    color: #3d657f;
+  }
+  &:visited {
+    color: #a32b2b;
+  }
+}
+
+p {
+  margin-bottom: 1em;
+}
+

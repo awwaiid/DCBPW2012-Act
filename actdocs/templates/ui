@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]" xml:lang="[% global.request.language %]">
+
+<head>
+  <!-- Document Metadata -->
+  <meta http-equiv="Content-Language" content="[% global.request.language %]" />
+
+  [%- IF title -%]<title>[% title  %]</title>[%- END -%]
+
+  <!-- OpenId -->
+  [% IF openid %]
+  <link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
+  [% END %]
+
+  <!-- Atom news feed -->
+  <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
+        href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="[% make_uri_info('css', 'style.css') %]" />
+  <link rel="stylesheet" type="text/css" href="/css/act-base.css" />
+  <link rel="stylesheet" type="text/css" href="/css/schedule.css" />
+
+  <!-- JavaScript sugar -->
+  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type="text/javascript" src="/js/act.js"></script>
+
+  <!-- Favorite icon -->
+  <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+</head>
+
+<body>
+  <div id="wrapperwrapper">
+  <div id="wrapper">
+
+    <div id="searchbar">
+      <div>
+        Log In
+        &nbsp;&nbsp;
+        |
+        &nbsp;&nbsp;
+        <form method="get" action="http://www.google.com/search">
+          <input type=text name=q id=searchinput>
+          <!-- <input type="submit" value="Google Search" /> -->
+          <input type="hidden"  name="sitesearch" value="dcbpw.org" />
+          <img src="/dcbpw2012/magnifier.png">
+        </form>
+      </div>
+    </div>
+
+    <div id="fakepage">
+
+      <div id=header>
+        <div id="headerbar"></div>
+          
+        <table cellpading=0 cellspacing=0 border=0 id=conference_name_table>
+        <tr>
+          <td valign=middle id="logocol">
+            <a href="/dcbpw2012/">
+            <img src="/dcbpw2012/logo-229x118.png"
+              alt="DCBPW Logo">
+            </a>
+          </td>
+          <td valign=middle>
+            <a href="/dcbpw2012/">
+            <img src="/dcbpw2012/workshopname.png"
+              alt="2012 DC-Baltimore Perl Workshop">
+            </a>
+          </td>
+        </tr>
+        </table>
+        <!-- [%- IF title -%]<h1>[% title  %]</h1>[%- END -%] -->
+      </div>
+
+
+      <div id="menu">
+        [% PROCESS menu %]
+      </div>
+
+      <div id="content">
+        [% content %]
+      </div>
+
+      <div id="footerbar"></div>
+
+    </div>
+
+    <div id="footer">
+      <div class=leftside>
+        Website/Logo design by <a href="mailto:a.gasparetti@gmail.com">Angela Gasparetti</a>
+      </div>
+      Powered by <a href="http://act.mongueurs.net/">Act</a>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>
