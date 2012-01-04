@@ -36,7 +36,12 @@
 
     <div id="searchbar">
       <div>
-        Log In
+        [% IF global.request.user %]
+           <a href="[% make_uri_info('user', global.request.user.user_id) %]">[% global.request.user.login %]</a>
+           <a href="[% make_uri('logout') %]">({{Logout}})</a>
+        [% ELSE %]
+           <a href="[% make_uri('main') %]">{{Log In}}</a>
+        [% END %]
         &nbsp;&nbsp;
         |
         &nbsp;&nbsp;
