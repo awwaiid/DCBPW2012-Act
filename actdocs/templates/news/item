@@ -1,0 +1,7 @@
+<h3><a href="#">[% title %]</a></h3> (press RETURN)
+<p>
+   <em>[% date_format(datetime, '%b %d, %Y') %] {{by}} [% user_info(global.req
+uest.user) %]</em>
+   <br />
+   [% content %]
+</p>
