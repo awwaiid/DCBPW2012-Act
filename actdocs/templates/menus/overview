@@ -12,10 +12,12 @@
   </a>
 [% END %]
 [% WRAPPER menus/item %]
+  <img src="[% make_uri('rss.jpg') %]">
   <a href="[% make_uri('news') %]">{{News}}</a>
   (<a href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml">feed</a>)
 [% END %]
 [% WRAPPER menus/item %]
+  <img src="[% make_uri('link.jpg') %]">
   <a href="[% make_uri('wiki') %]">Wiki</a>
 [% END %]
 

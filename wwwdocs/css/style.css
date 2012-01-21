@@ -84,6 +84,9 @@ body {
     list-style-type: none; }
   #menu li + h2 {
     margin-top: 10px; }
+  #menu img {
+    vertical-align: middle;
+    margin: 2px; }
 
 #content {
   padding-right: 40px;
