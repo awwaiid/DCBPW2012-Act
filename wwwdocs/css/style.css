@@ -88,6 +88,12 @@ body {
 #content {
   padding-right: 40px;
   padding-left: 20px; }
+  #content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1em 0pt; }
+    #content h2:first-child {
+      margin-top: 0; }
 
 #footer {
   clear: both;

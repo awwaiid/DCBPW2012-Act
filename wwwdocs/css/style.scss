@@ -126,6 +126,17 @@ body {
   padding-left: 20px;
   //  float: right;
   //  width: 650px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1em 0pt;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
 }
 
 #footer {
