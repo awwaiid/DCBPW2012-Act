@@ -2,8 +2,10 @@
   <a href="http://dcbpw.org/dcbpw2012/">DCBPW 2012</a>
 [% END %]
 [% WRAPPER menus/item %]
-  <img src="[% make_uri('calendar-icon.png') %]">
-  When: <a href="[% make_uri('dcbpw.ics') %]">Sat, April 14, 2012</a>
+  <a href="[% make_uri('dcbpw.ics') %]">
+    <img src="[% make_uri('calendar-icon.png') %]">
+    When: Sat, April 14, 2012
+  </a>
 [% END %]
 [% WRAPPER menus/item %]
   <a href="[% make_uri('location.html') %]">
@@ -12,12 +14,16 @@
   </a>
 [% END %]
 [% WRAPPER menus/item %]
-  <img src="[% make_uri('rss.jpg') %]">
-  <a href="[% make_uri('news') %]">{{News}}</a>
+  <a href="[% make_uri('news') %]">
+    <img src="[% make_uri('rss.jpg') %]">
+    {{News}}
+  </a>
   (<a href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml">feed</a>)
 [% END %]
 [% WRAPPER menus/item %]
-  <img src="[% make_uri('link.jpg') %]">
-  <a href="[% make_uri('wiki') %]">Wiki</a>
+  <a href="[% make_uri('wiki') %]">
+    <img src="[% make_uri('link.jpg') %]">
+    Wiki
+  </a>
 [% END %]
 
