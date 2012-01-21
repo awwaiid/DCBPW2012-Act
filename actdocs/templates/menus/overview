@@ -1,11 +1,14 @@
 [% WRAPPER menus/section %]
-  <a href="/">DCBPW 2011</a>
+  <a href="http://dcbpw.org/dcbpw2012/">DCBPW 2012</a>
+[% END %]
+[% WRAPPER menus/item %]
+  <img src="/calendar-icon.png">Saturday, April 14, 2012
+[% END %]
+[% WRAPPER menus/item %]
+  <a href="[% make_uri('location.html') %]"><img src="/map-place-icon.png">Location - Near Baltimore, MD</a>
 [% END %]
 [% WRAPPER menus/item %]
   <a href="[% make_uri('news') %]">{{News}}</a>
-[% END %]
-[% WRAPPER menus/item %]
-  <a href="[% make_uri('location.html') %]">Location</a>
 [% END %]
 [% WRAPPER menus/item %]
   <a href="[% make_uri('wiki') %]">Wiki</a>
