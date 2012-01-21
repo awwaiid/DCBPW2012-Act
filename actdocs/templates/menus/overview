@@ -3,7 +3,7 @@
 [% END %]
 [% WRAPPER menus/item %]
   <img src="[% make_uri('calendar-icon.png') %]">
-  When: Sat, April 14, 2012
+  When: <a href="[% make_uri('dcbpw.ics') %]">Sat, April 14, 2012</a>
 [% END %]
 [% WRAPPER menus/item %]
   <a href="[% make_uri('location.html') %]">
