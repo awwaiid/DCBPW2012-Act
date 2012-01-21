@@ -2,12 +2,12 @@
   <a href="http://dcbpw.org/dcbpw2012/">DCBPW 2012</a>
 [% END %]
 [% WRAPPER menus/item %]
-  <img src="[% make_url('calendar-icon.png') %]">
+  <img src="[% make_uri('calendar-icon.png') %]">
   When: Sat, April 14, 2012
 [% END %]
 [% WRAPPER menus/item %]
   <a href="[% make_uri('location.html') %]">
-    <img src="[% make_url('map-place-icon.png') %]">
+    <img src="[% make_uri('map-place-icon.png') %]">
     Location: Baltimore, MD
   </a>
 [% END %]
