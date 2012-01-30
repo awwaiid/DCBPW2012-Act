@@ -26,7 +26,6 @@
     Wiki
   </a>
 [% END %]
-
 [% IF global.request.user.has_registered %]
   [% IF global.config.payment_type != "NONE" %]
     [% IF global.config.payment_open %]
@@ -37,7 +36,5 @@
         [% END %]
     [% END %]
   [% END %]
-[% ELSIF !global.config.closed %]
-  <!--  <li><a href="[% make_uri('register') %]">{{register for this conference}}</a><br /></li> -->
 [% END %]
 

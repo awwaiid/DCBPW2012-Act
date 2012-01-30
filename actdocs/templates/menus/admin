@@ -9,7 +9,8 @@
    </a>
    [% END %]
   [% IF global.request.user.is_news_admin %]
-  [% WRAPPER menus/item %]
-  <a href="[% make_uri('newsadmin') %]">{{News Administration}}</a>
+    [% WRAPPER menus/item %]
+      <a href="[% make_uri('newsadmin') %]">{{News Administration}}</a>
+    [% END %]
   [% END %]
 [% END %]
